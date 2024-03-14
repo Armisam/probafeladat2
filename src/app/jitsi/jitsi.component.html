@@ -1,0 +1,8 @@
+<div id="jitsi-iframe"></div>
+<div class="button-container">
+    <button mat-fab color="warn" (click)="executeCommand('toggleAudio')"><mat-icon>{{ !isAudioMuted ? 'mic' :
+            'mic_off'}}</mat-icon></button>
+    <button mat-fab color="warn" (click)="executeCommand('toggleVideo')"><mat-icon>{{ !isVideoMuted ? 'videocam' :
+            'videocam_off'}}</mat-icon></button>
+    <button mat-fab color="warn" (click)="executeCommand('hangup')"><mat-icon>call_end</mat-icon></button>
+</div>
